@@ -1,0 +1,91 @@
+﻿<!DOCTYPE HTML>
+<html lang="de">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"> 
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta http-equiv="cache-control" content="no-cache">
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>		
+		<!--[if lte IE 9]>
+		<script src="js/jquery.xdomainrequest.min.js" type="text/javascript"></script>
+		<![endif]-->
+		<link href="css/style.css" charset="utf-8" rel="stylesheet">		
+		<!--[if IE]>
+		<style type="text/css">
+			h3 {
+				position:relative;
+				top:17px;
+			}
+			.textarea2 {
+				top:95px;
+			}
+			#content {
+				height:606px;
+			}
+			div#abfrage {
+				top:-5px;
+				padding:7px;
+				height:21px;
+			}
+			.two {
+				padding-left:0px;
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+
+	<tbody id="tbody">
+
+	</tbody>
+		<div class="topspace"></div>
+
+		<div class="wrapper">			
+			<div class="header">
+				<div class="logo"></div>	
+				<div class="info">PAVIS Connect REST Tool</div>	
+				<div id="leeren"><h3>Formular<br>leeren</h3></div>	
+			</div>
+				<div id="content">										
+					<div class="one">
+						<div style="margin:10px;">Bitte wählen Sie ein Beispiel:</div>
+						<div style="margin:10px;" class="minis">
+							<div class="mini sel" id="btn1" title="Import-Request: falsches Passwort">1</div>
+							<div class="mini" id="btn2" title="Import-Request: Fehler (Anmeldedatum fehlt)">2</div>
+							<div class="mini" id="btn3" title="Import-Request: Schutzrecht mit Auftragstyp DAUER">3</div>
+							<div class="mini" id="btn4" title="Import-Request: Schutzrecht + Einzelauftrag">4</div>
+							<div class="mini" id="btn5" title="Vorschau-Request">5</div>							
+							<div class="mini" id="btn6" title="Budget-Request">6</div>							
+							<div class="mini" id="btn7" title="History-Request ohne Quittung">7</div>
+							<div class="mini" id="btn8" title="History-Request mit Quittung">8</div>
+							<div class="mini" id="btn9" title="Receipt-Request">9</div>
+							<div class="mini" id="btn10" title="Status-Request">10</div>
+							<div class="mini" id="btn11" title="Storno-Request">11</div>
+						</div>
+					</div>
+
+					<div class="one two">
+						<div style="margin:10px;">Request URL:</div>
+						<div style="margin:10px;">
+							<input type="text" size="60" name="url" id="url" />&nbsp;
+							<div id="abfrage" href="javascript:void(0); ontouchstart='return true;'">Abfrage starten</div>
+						</div>
+					</div>
+					<br><br><br><br><br>					
+					<div class="textarea" id="form">
+						<div style="margin:10px;">XML-Request:</div>
+						<div id="request"></div>
+					</div>
+					<div class="textarea textarea2">
+						<div style="margin:10px;">XML-Response:</div>
+						<div id="response">
+
+						</div>
+                        <dl>
+                        </dl>
+					</div>
+			</div>			
+		</div>
+	</body>	
+	<script type="text/javascript" src="js/xml.js"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>	
+</html>

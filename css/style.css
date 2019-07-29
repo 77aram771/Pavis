@@ -1,0 +1,443 @@
+body {
+    padding: 0;
+    background: rgb(232, 232, 232);
+    font-family: Verdana, Tahoma, Calibri;
+    font-size: 14px;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.topspace {
+    height: 20px;
+}
+
+.wrapper {
+    margin: 0px auto;
+    padding: 10px;
+    width: 1090px;
+    z-index: 1;
+}
+
+.header {
+    position: absolute;
+    top: 30px;
+    width: 1090px;
+    height: 84px;
+    margin: -10px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+}
+
+.header .logo {
+    float: left;
+    width: 173px;
+    height: 84px;
+    margin: 0 10px 0 0;
+    background: url("../img/logo.png");
+}
+
+.header .info {
+    background: none repeat scroll 0 0 #E1E0D7;
+    color: #807B6A;
+    float: left;
+    height: 84px;
+    line-height: 84px;
+    vertical-align: middle;
+    text-align: center;
+    width: 700px;
+    margin: 0 10px 0 0;
+    font-family: Verdana, Tahoma, Calibri;
+    font-size: 26px;
+}
+
+div#leeren, div#rest {
+    float: left;
+    background: #CDCCC4;
+    color: #807B6A;
+    width: 196px;
+    height: 84px;
+    line-height: 84px;
+    text-align: center;
+    display: inline-block;
+}
+
+div#rest {
+    vertical-align: middle;
+    font-family: Verdana, Tahoma, Calibri;
+    font-size: 26px;
+}
+
+div#leeren:hover, div#rest:hover {
+    cursor: pointer;
+    background: rgb(183, 39, 46);
+    color: white;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+h3 {
+    vertical-align: middle;
+    line-height: 27px;
+}
+
+div#abfrage {
+    display: inline;
+    background: #CDCCC4;
+    color: #807B6A;
+    width: 142px;
+    height: 20px;
+    padding: 6px;
+    text-align: center;
+    top: 1px;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+div#abfrage:hover {
+    cursor: pointer;
+    background: rgb(183, 39, 46);
+    color: white;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+div#abfrage:active {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+}
+
+#content {
+    position: absolute;
+    top: 124px;
+    bottom: 140px;
+    width: 1070px;
+    margin: 0 0 0 -10px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    background: rgb(242, 242, 242);
+    text-align: justify;
+    height: 75%;
+}
+
+#content2 {
+    position: absolute;
+    top: 124px;
+    bottom: 140px;
+    width: 1070px;
+    margin: 0 0 0 -10px;
+    padding: 10px;
+    overflow-x: hidden;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+    background: rgb(242, 242, 242);
+    text-align: justify;
+}
+
+textarea {
+    border: none;
+    width: 90%;
+    height: 330px;
+    font-family: Verdana, Tahoma, Calibri;
+    font-size: 12px;
+    resize: none;
+    overflow: auto;
+    border: 0px;
+    outline: none;
+    padding: 10px;
+    margin: 20px 0 0 13px;
+}
+
+.textarea {
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #E1E0D7;
+    width: 520px;
+    height: 524px;
+    display: block;
+    top: 98px;
+    position: absolute;
+}
+
+.textarea2 {
+    float: right;
+    left: 560px;
+    overflow: scroll;
+}
+
+.textarea_val {
+    height: 315px;
+}
+
+input {
+    border: 0;
+    outline: none;
+    width: 350px;
+    height: 20px;
+    padding: 5px;
+    background: white;
+}
+
+.mini {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: #CDCCC4;
+    color: #807B6A;
+    margin: 0 5px 0 0px;
+    padding: 4px 10px 3px 10px;
+    text-align: center;
+}
+
+.mini:hover {
+    cursor: pointer;
+    background: rgb(183, 39, 46);
+    color: white;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.sel {
+    background: rgb(183, 39, 46);
+    color: white;
+}
+
+.one {
+    border: 1px solid #E1E0D7;
+    float: left;
+    width: 520px;
+    height: 78px;
+}
+
+.two {
+/ / padding-left: 22 px;
+    float: right;
+    position: absolute;
+    top: 10px;
+    left: 560px;
+}
+
+.AppWaitScreen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    border: 1px solid #E1E0D7;
+    background: url(../img/icon_loading.gif) no-repeat center;
+    display: none;
+}
+
+/* --- AppMessage ----- */
+
+.AppMessage {
+    position: absolute;
+    width: 330px;
+    height: 168px;
+    border: 1px solid rgb(200, 200, 200);
+
+    background-color: rgb(68, 68, 68); /* Needed for IEs */
+
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+    /*
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+    zoom: 1;
+    */
+
+    z-index: 1001 !important;
+}
+
+.AppWindowLayer {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    display: block;
+    z-index: 999;
+}
+
+.AppMessageContent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 300px;
+    height: 80px;
+    padding: 15px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    background: rgb(225, 224, 215);
+}
+
+.AppWindowToolbar {
+    position: absolute;
+    bottom: 0px;
+    height: 58px;
+    width: 100%;
+    background: rgb(242, 242, 242);
+}
+
+.button {
+    float: left;
+
+    padding: 5px 10px 5px 10px;
+    margin: 0 10px 0 0;
+    background: rgb(225, 224, 215);
+    color: rgb(128, 123, 106);
+    font-weight: normal;
+    role: "button";
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background: rgb(183, 39, 46);
+    color: white;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.dialog_button {
+    position: absolute;
+    width: 80px;
+    background: rgb(225, 224, 215);
+}
+
+/*ImportTest.htm*/
+
+/*span {*/
+/*border: 1px solid white;*/
+/*font-size: 10px;	*/
+/*padding: 2px;*/
+/*background:rgb(156,149,133);*/
+/*color: white;	*/
+/*}*/
+
+.tbl {
+    font-family: Verdana, Tahoma, Calibri;
+    font-size: 12px;
+    border: 1px solid #E1E0D7;
+    margin-bottom: 6px;
+}
+
+.name {
+    width: 220px;
+}
+
+.space1 {
+    width: 5px;
+}
+
+.space2 {
+    width: 80px;
+}
+
+.input {
+    width: 220px;
+}
+
+.right-inner-addon {
+    position: relative;
+}
+
+.right-inner-addon i {
+    padding: 7px 12px;
+    position: absolute;
+    right: 0;
+}
+
+i.icon-delete {
+    cursor: pointer;
+}
+
+.icon-delete:before {
+    content: "x";
+    display: inline-block;
+    text-decoration: inherit;
+    font-style: normal;
+}
+
+form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+form label {
+    padding: 0 15px;
+    height: auto;
+}
+
+form label input {
+    height: auto;
+    margin: 10px 0;
+}
+
+form label textarea {
+    width: 470px;
+    height: 285px !important;
+    overflow: scroll;
+}
+
+#response {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    height: auto;
+}
+
+.newDiv {
+    display: flex;
+    width: 100%;
+}
+
+.newDiv_1 p {
+    height: 18px;
+    font-size: 15px;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+.newDiv_2 p {
+    font-size: 15px;
+    padding: 3px;
+    border: 2px solid black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
